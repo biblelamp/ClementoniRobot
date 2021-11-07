@@ -13,12 +13,33 @@
             android:layout_height="match_parent">
 
         <ImageButton
-            android:onClick="onClickInit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@android:color/transparent"
-            app:srcCompat="@drawable/init_button_32x32"
-            android:id="@+id/initButton"/>
+                android:onClick="onClickManualMode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/init_button_32x32"
+                android:id="@+id/initButton"/>
+        <ImageButton
+                android:onClick="onClickPrgMode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/prg_button_32x32"
+                android:id="@+id/prgButton"/>
+        <ImageButton
+                android:onClick="onClickPrgRecord"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/record_button_32x32"
+                android:id="@+id/recordButton"/>
+        <ImageButton
+                android:onClick="onClickPrgRun"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/play_button_32x32"
+                android:id="@+id/runButton"/>
     </TableRow>
     <TableRow
             android:gravity="center"
